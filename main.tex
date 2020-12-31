@@ -1,0 +1,37 @@
+\documentclass[11pt,draft]{article}
+%
+\usepackage{basic}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+   \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+%
+% from sage
+% \usepackage[x11names, rgb]{xcolor}
+            % \usepackage[utf8]{inputenc}
+            % \usepackage{tikz}
+            % \usetikzlibrary{snakes,arrows,shapes}
+            % \usepackage{amsmath}
+            % \usepackage[active,tightpage]{preview}
+            % \newenvironment{bla}{}{}
+            % \PreviewEnvironment{bla}
+% 
+\begin{document}
+%
+\include{shapovalov}
+% 
+% is its own file now: \include{zhijie}
+%
+% import bibliography from tex.bib file
+%
+\bibliographystyle{plain}
+\bibliography{tex}
+%
+% for bundling, bbl file contains
+%
+% \begin{thebibliography}{E-G-S}
+
+% \bibitem[A1]{Anderson00}
+% J.~E.~Anderson, \textit{On Mirkovi\'c and Vilonen's Intersection Homology cycles for the Loop Grassmannian.} PhD thesis, Princeton University, 2000.
+
+% \end{thebibliography}
+%
+\end{document}
